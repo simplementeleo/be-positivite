@@ -1,8 +1,8 @@
 // -- Instacia de elementos
 let targetRegister = document.querySelector('#targetRegister'); // Desktop - Acción registro 
 let targetLogin = document.querySelector('#targetLogin'); // Mobile - Acción registro
-let cardRegister = document.querySelector('.card-register'); // Desktop - Sección de registro
-let contentRegister = document.querySelector('.content-register'); // Desktop - Contenido de registro
+let cardRegister = document.querySelector('.target-card-register'); // Desktop - Sección de registro
+let contentRegister = document.querySelector('#contentRegister'); // Desktop - Contenido de registro
 let iconView = document.querySelector('.icon-view'); // - Visualizar contraseña
 let inputPassword = document.querySelectorAll('#password'); // - Entrada tipo contraseña
 let createAccount = document.querySelector('#create-account'); // - Boton de crear cuenta
@@ -109,13 +109,16 @@ avenir.addEventListener('click', () => {
     changeFont('Avenir')
 })
 
+// Cambiando fondo
+window.addEventListener('resize', () => { changeBackground() })
+
 // -- Funciones
 // Registro desktop
 const register = () => {
     cardRegister.classList.add('expand-register')
     setTimeout(() => {
         contentRegister.classList.remove('hidden')
-    }, 500)
+    }, 289)
 }
 // Inicio de sesión desktop
 const login = () => {
@@ -130,21 +133,18 @@ const createAccountDesktop = () => {
 }
 // Inicio de sesión mobile
 const mobileLogin = () => {
-    console.log('Mostrando login')
     body.style.backgroundColor = '#FFFFFF';
     cardMobileHome.style.display = 'none'
     cardLoginMobile.style.display = 'block'
 }
 // Devolver desde inicio de sesión mobile
 const MbackOne = () => {
-    console.log('Quitando login')
     body.style.backgroundColor = '#FBEFEC';
     cardMobileHome.style.display = 'block'
     cardLoginMobile.style.display = 'none'
 }
 // Devolver desde regitro mobile
 const MbackTwo = () => {
-    console.log('Mostrando Home')
     body.style.backgroundColor = '#FBEFEC';
     cardMobileHome.style.display = 'block'
     cardLoginMobile.style.display = 'none'
@@ -152,7 +152,6 @@ const MbackTwo = () => {
 }
 // Registrarse en mobile
 const setAccountMobile = () => {
-    console.log('Crear cuenta')
     body.style.backgroundColor = '#FFFFFF';
     cardRegisterMobile.style.display = 'block'
     cardMobileHome.style.display = 'none'
@@ -160,7 +159,6 @@ const setAccountMobile = () => {
 }
 // Iniciar sesión en mobile
 const setLoginMobile = () => {
-    console.log('Mostrando inicio de sesión')
     body.style.backgroundColor = '#FFFFFF';
     cardRegisterMobile.style.display = 'none'
     cardMobileHome.style.display = 'none'
@@ -185,5 +183,12 @@ const closeCardOtherAccounts = () => {
 // Cambiar fuente
 const changeFont = (font) => {
     const attr = body.setAttribute('font-family', font)
-    console.log('Cambiando fuente')
 }
+// Fondo
+const changeBackground = () => {
+    if (window.innerWidth > 1023 ) {
+        body.style.backgroundColor = '#FFFFFF'
+    } else {
+        body.style.backgroundColor = '#FBEFEC'
+    }
+} 

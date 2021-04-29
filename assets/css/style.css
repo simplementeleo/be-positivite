@@ -216,17 +216,9 @@ button {
     font-weight: 600;
 }
 
-.expand-register {
-    height: 100%;
-}
 
 .hidden {
     display: none;
-}
-
-.top-0 {
-    top: 0;
-    display: block;
 }
 
 .mobile {
@@ -278,7 +270,11 @@ button {
     height: 0%;
     background: var(--secondary-dobby);
     transition: var(--trs-time);
-    z-index: 10;
+    z-index: 20;
+}
+
+.expand-register {
+    height: 100%;
 }
 
 /* Mobile */
@@ -464,6 +460,11 @@ input:checked~label .checkmark {
     color: var(--secondary-dobby);
     display: none;
 }
+.top-0 {
+    top: 0;
+    display: block;
+}
+
 
 .mobile-main {
     display: none;
