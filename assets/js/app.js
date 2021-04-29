@@ -140,13 +140,13 @@ const mobileLogin = () => {
 // Devolver desde inicio de sesión mobile
 const MbackOne = () => {
     body.style.backgroundColor = '#FBEFEC';
-    cardMobileHome.style.display = 'block'
+    cardMobileHome.style.display = 'flex'
     cardLoginMobile.style.display = 'none'
 }
 // Devolver desde regitro mobile
 const MbackTwo = () => {
     body.style.backgroundColor = '#FBEFEC';
-    cardMobileHome.style.display = 'block'
+    cardMobileHome.style.display = 'flex'
     cardLoginMobile.style.display = 'none'
     cardRegisterMobile.style.display = 'none'
 }
@@ -186,7 +186,7 @@ const changeFont = (font) => {
 }
 // Fondo
 const changeBackground = () => {
-    if (window.innerWidth > 1023 ) {
+    if (window.innerWidth > 1034 ) {
         body.style.backgroundColor = '#FFFFFF'
     } else {
         body.style.backgroundColor = '#FBEFEC'

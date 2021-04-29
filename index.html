@@ -53,7 +53,7 @@
     </div>
 
     <!-- Cambiar fuente -->
-    <div class="font-change">
+    <div class="font-change" style="display: none;">
         <div class="change nunito">
             Nunito
         </div>
@@ -66,32 +66,30 @@
     <main class="row">
         <!-- Sección izquierda - Logo y mensaje: "Gestiona tus seguidores de forma segura" -->
         <div class="col">
-            <div class="p-3">
+            <div class="left-section">
                 <!-- Logo -->
-                <img src="./assets/images/Logo-be-spositive.png" alt="Image Be Positive" style="max-width: 166px;">
+                <img src="./assets/images/Logo-be-spositive.png" width="176px" alt="Image Be Positive" >
                 <!-- Mensaje -->
-                <h1 class="text-harry">Gestiona tus seguidores de forma segura <img src="./assets/images/Vector.png"
-                        class="sol" alt="Sol"></h1>
+                <h1 class="text-harry text-gestiona">Gestiona tus seguidores de forma segura <img src="./assets/images/Vector.png" class="sol" alt="Sol"></h1>
             </div>
         </div>
 
         <!-- Sección derecha -->
         <div class="col">
-            <div class="p-3 card-main">
+            <div class="card-main">
                 <!-- Marco o tarjeta base -->
                 <div class="card">
-
                     <div class="mobile-main">
                         <!-- Inicio - Mobile -->
                         <div class="card-mobile card-mobile-home mobile">
                             <div class="content-mobile">
                                 <img src="./assets/images/mobile-logo.png" width="100%" class="mobile-logo"
                                     alt="Be Positive">
-                                <div class="text-hermaione">
+                                <div class="text-hermaione welcome-mobile">
                                     <p>Bienvenido!</p>
-                                    <h2 class="mt-1">Conecta con tus seguidores</h2>
+                                    <h2>Conecta con tus seguidores</h2>
                                 </div>
-                                <button type="submit" class="bg-harry mt-1" id="loginMobile">
+                                <button type="submit" class="bg-harry mt-login" id="loginMobile">
                                     Iniciar Sesión
                                 </button>
                                 <button type="submit" class="btn-hermaione" id="sessionOtherAccount">
@@ -115,7 +113,7 @@
                                             <img src="./assets/images/Logo-be-spositive.png" class="mx-auto"
                                                 width="270px" alt="Be Positive">
                                         </div>
-                                        <p class="text-hermaione">Registrarse en be positivite</p>
+                                        <p class="text-hermaione font-800">Registrarse en be positivite</p>
                                     </div>
                                     <!-- Formulario -->
                                     <form>
@@ -144,7 +142,7 @@
                                                 <span class="text">Aceptar términos y condiciones</span>
                                             </label>
                                         </div>
-                                        <button type="submit" id="register-account-mobile" class="bg-hermaione">
+                                        <button type="submit" id="register-account-mobile" class="bg-hermaione btn-submit">
                                             Crear cuenta
                                         </button>
                                     </form>
@@ -168,7 +166,7 @@
                                     <img src="./assets/images/Logo-be-spositive.png" class="mx-auto" width="270px"
                                         alt="Be Positive">
                                 </div>
-                                <p class="text-hermaione">Inicie sesión para utilizar la aplicación</p>
+                                <p class="text-hermaione font-800">Inicie sesión para utilizar la aplicación</p>
                             </div>
                             <!-- Formulario -->
                             <form class="form-login-mobile mobile">
@@ -184,8 +182,8 @@
                                     <img class="icon-view" id="icon-view" src="./assets/images/icon-view.svg"
                                         alt="Icon View">
                                 </div>
-                                <a href="#" class="text-harry text-right font-bold mt-1">¿Olvidaste tu contraseña?</a>
-                                <button type="submit" id="btn-submit-login" class="btn-positive bg-harry mt-3">
+                                <a href="#" class="text-harry text-right font-bold senha">¿Olvidaste tu contraseña?</a>
+                                <button type="submit" id="btn-submit-login" class="btn-positive bg-harry btn-submit">
                                     Iniciar Sesión
                                 </button>
                             </form>
@@ -200,12 +198,13 @@
                         </div>
                     </div>
 
+                    <!-- Desktop General -->
                     <div class="desktop-main">
                         <!-- Sección de registro - Desktop -->
                         <div class="card-register desktop target-card-register">
                             <div id="contentRegister" class="content-register hidden fade">
                                 <div>
-                                    <h2 class="text-hermaione">Registrarse en be positive</h2>
+                                    <h2 class="text-hermaione welcome">Registrarse en be positive</h2>
                                     <!-- Formulario -->
                                     <form action="#">
                                         <div class="input">
@@ -233,11 +232,11 @@
                                                 <span class="text">Aceptar términos y condiciones</span>
                                             </label>
                                         </div>
-                                        <button type="submit" id="create-account" class="btn-positive bg-harry">
+                                        <button type="submit" id="create-account" class="btn-positive bg-harry btn-submit">
                                             Crear cuenta
                                         </button>
                                     </form>
-                                    <a href="#" class="text-hermaione text-center font-bold mt-3">O registrarse con otra
+                                    <a href="#" class="text-hermaione text-center font-bold mt-o-accounts">O registrarse con otra
                                         cuenta</a>
                                     <!-- Registrarse con otras cuentas -->
                                     <div class="socials">
@@ -259,8 +258,8 @@
 
                         <!-- Sección de inicio de sesión - Desktop-->
                         <div class="card-login desktop">
-                            <div class="desktop">
-                                <h2 class="text-hermaione welcome">Bienvenido</h2>
+                            <div class="desktop welcome">
+                                <h2 class="text-hermaione">Bienvenido</h2>
                                 <p class="text-hermaione">Inicie sesión ingresando su cuenta aquí</p>
                             </div>
                             <!-- Formulario -->
@@ -277,14 +276,14 @@
                                     <img class="icon-view" id="icon-view" src="./assets/images/icon-view.svg"
                                         alt="Icon View">
                                 </div>
-                                <a href="#" class="text-harry text-right font-bold mt-1">¿Olvidaste tu contraseña?</a>
-                                <button type="submit" id="btn-submit-login" class="btn-positive bg-harry mt-3">
+                                <a href="#" class="text-harry text-right font-bold senha">¿Olvidaste tu contraseña?</a>
+                                <button type="submit" id="btn-submit-login" class="btn-submit bg-harry">
                                     Iniciar Sesión
                                 </button>
                             </form>
                             <!-- Registrarse con otras cuentas -->
                             <div class="desktop">
-                                <a href="#" class="text-hermaione text-center font-bold mt-3">O inicie sesión con otra
+                                <a href="#" class="text-hermaione text-center font-bold mt-o-accounts">O inicie sesión con otra
                                     cuenta</a>
                                 <div class="socials">
                                     <a href="#" class="icon">
