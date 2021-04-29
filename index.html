@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Positivite</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<!-- Atributo font-family para añadir el cambio de fuente por medio del Javascript -->
+
+<body font-family>
+
+    <!-- Alerta -->
+    <div class="alert">
+        <p>Felicidades te has registrado exitosamente.</p>
+    </div>
+
+    <!-- Inicio de sesión con otras cuentas - Mobile -->
+    <div class="accounts-others">
+        <div class="content-accounts-others">
+            <div class="top-line"></div>
+            <div class="flex mt-1">
+                <img src="./assets/images/close.png" class="pointer close-accounts-others">
+                <h3 class="text-center text-harry ml-4">Selecciona tu cuenta</h3>
+            </div>
+            <!-- Iniciar sesión con: Apple ID; Facebook; Google -->
+            <div class="accounts">
+                <button type="button" class="btn-voldemort text-harry mt-2 account">
+                    <img src="./assets/images/Icon apple.png">
+                    <h3>Continua con Apple ID</h3>
+                </button>
+                <button type="button" class="btn-voldemort text-harry mt-1 account">
+                    <img src="./assets/images/Icon facenook.png">
+                    <h3>Continua con Facebook</h3>
+                </button>
+                <button type="button" class="btn-voldemort text-harry mt-1 account">
+                    <img src="./assets/images/Icon google.png">
+                    <h3>Continua con Google</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cambiar fuente -->
+    <div class="font-change">
+        <div class="change nunito">
+            Nunito
+        </div>
+        <div class="change avenir">
+            Avenir
+        </div>
+    </div>
+
+    <!-- Sección principal -->
+    <main class="row">
+        <!-- Sección izquierda - Logo y mensaje: "Gestiona tus seguidores de forma segura" -->
+        <div class="col">
+            <div class="p-3">
+                <!-- Logo -->
+                <img src="./assets/images/Logo-be-spositive.png" alt="Image Be Positive" style="max-width: 166px;">
+                <!-- Mensaje -->
+                <h1 class="text-harry">Gestiona tus seguidores de forma segura <img src="./assets/images/Vector.png"
+                        class="sol" alt="Sol"></h1>
+            </div>
+        </div>
+
+        <!-- Sección derecha -->
+        <div class="col">
+            <div class="p-3 card-main">
+                <!-- Marco o tarjeta base -->
+                <div class="card">
+
+                    <div class="mobile-main">
+                        <!-- Inicio - Mobile -->
+                        <div class="card-mobile card-mobile-home mobile">
+                            <div class="content-mobile">
+                                <img src="./assets/images/mobile-logo.png" width="100%" class="mobile-logo"
+                                    alt="Be Positive">
+                                <div class="text-hermaione">
+                                    <p>Bienvenido!</p>
+                                    <h2 class="mt-1">Conecta con tus seguidores</h2>
+                                </div>
+                                <button type="submit" class="bg-harry mt-1" id="loginMobile">
+                                    Iniciar Sesión
+                                </button>
+                                <button type="submit" class="btn-hermaione" id="sessionOtherAccount">
+                                    Iniciar sesión con otra cuenta
+                                </button>
+                                <p class="text-harry text-center last-a font-bold pointer" id="createAccountMobile">
+                                    ¿Eres un
+                                    nuevo usuario? <span class="text-hermaione">Crear una cuenta</span></p>
+                                <div class="bottom-line"></div>
+                            </div>
+                        </div>
+
+                        <!-- Sección de registro - Mobile -->
+                        <div class="card-register card-register-mobile">
+                            <div class="content-register">
+                                <div>
+                                    <!-- Logo -->
+                                    <div class="login-show mobile">
+                                        <img src="./assets/images/back.png" class="back" id="backTwo">
+                                        <div class="be-positive-mobile">
+                                            <img src="./assets/images/Logo-be-spositive.png" class="mx-auto"
+                                                width="270px" alt="Be Positive">
+                                        </div>
+                                        <p class="text-hermaione">Registrarse en be positivite</p>
+                                    </div>
+                                    <!-- Formulario -->
+                                    <form>
+                                        <div class="input">
+                                            <p class="text-harry font-bold">Email / Nombre de usuario</p>
+                                            <input name="user" autocomplete="off" required type="text"
+                                                placeholder="Ingresa email o nombre de usuario">
+                                        </div>
+                                        <div class="input">
+                                            <p class="text-harry font-bold">Nombre</p>
+                                            <input name="name" autocomplete="off" required type="text"
+                                                placeholder="Ingresa nombre">
+                                        </div>
+                                        <div class="input">
+                                            <p class="text-harry font-bold">Contraseña</p>
+                                            <input name="password" autocomplete="off" required type="password"
+                                                placeholder="Ingresa contraseña" id="password">
+                                            <img class="icon-view" id="icon-view" src="./assets/images/icon-view.svg"
+                                                alt="Icon View">
+                                        </div>
+                                        <div class="termins">
+                                            <input type="checkbox" id="terminsOne">
+
+                                            <label for="terminsOne" class="text-hermaione pointer">
+                                                <span class="checkmark"></span>
+                                                <span class="text">Aceptar términos y condiciones</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" id="register-account-mobile" class="bg-hermaione">
+                                            Crear cuenta
+                                        </button>
+                                    </form>
+                                    <button type="submit" class="btn-harry" id="registerOtherAccount">
+                                        Registrarse con otra cuenta
+                                    </button>
+                                    <p class="text-harry text-center last-a font-bold pointer target-login-mobile">¿Ya
+                                        eres
+                                        usuario? <span class="text-hermaione">Ingresar</span></p>
+                                    <div class="bottom-line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sección de inicio de sesión - Mobile -->
+                        <div class="card-login card-login-mobile mobile">
+                            <!-- Logo -->
+                            <div class=>
+                                <img src="./assets/images/back.png" class="back" id="backOne">
+                                <div class="be-positive-mobile">
+                                    <img src="./assets/images/Logo-be-spositive.png" class="mx-auto" width="270px"
+                                        alt="Be Positive">
+                                </div>
+                                <p class="text-hermaione">Inicie sesión para utilizar la aplicación</p>
+                            </div>
+                            <!-- Formulario -->
+                            <form class="form-login-mobile mobile">
+                                <div class="input">
+                                    <p class="text-harry font-bold">Email / Nombre de usuario</p>
+                                    <input name="user" autocomplete="off" required type="text"
+                                        placeholder="Ingresa email o nombre de usuario">
+                                </div>
+                                <div class="input">
+                                    <p class="text-harry font-bold">Contraseña</p>
+                                    <input name="password" autocomplete="off" required type="password"
+                                        placeholder="Ingresa contraseña" id="password">
+                                    <img class="icon-view" id="icon-view" src="./assets/images/icon-view.svg"
+                                        alt="Icon View">
+                                </div>
+                                <a href="#" class="text-harry text-right font-bold mt-1">¿Olvidaste tu contraseña?</a>
+                                <button type="submit" id="btn-submit-login" class="btn-positive bg-harry mt-3">
+                                    Iniciar Sesión
+                                </button>
+                            </form>
+                            <div class="mobile">
+                                <button type="submit" class="btn-harry" id="sessionOtherAccountB">
+                                    Iniciar sesión con otra cuenta
+                                </button>
+                                <p class="text-harry text-center last-a font-bold pointer mt-4 create-account-mobile">
+                                    ¿Eres un nuevo usuario? <span class="text-hermaione">Crear una cuenta</span></p>
+                            </div>
+                            <div class="bottom-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="desktop-main">
+                        <!-- Sección de registro - Desktop -->
+                        <div class="card-register desktop">
+                            <div class="content-register hidden fade">
+                                <div>
+                                    <h2 class="text-hermaione">Registrarse en be positive</h2>
+                                    <!-- Formulario -->
+                                    <form action="#">
+                                        <div class="input">
+                                            <p class="text-harry font-bold">Email / Nombre de usuario</p>
+                                            <input name="user" autocomplete="off" required type="text"
+                                                placeholder="Ingresa email o nombre de usuario">
+                                        </div>
+                                        <div class="input">
+                                            <p class="text-harry font-bold">Nombre</p>
+                                            <input name="name" autocomplete="off" required type="text"
+                                                placeholder="Ingresa nombre">
+                                        </div>
+                                        <div class="input">
+                                            <p class="text-harry font-bold">Contraseña</p>
+                                            <input name="password" autocomplete="off" required type="password"
+                                                placeholder="Ingresa contraseña" id="password">
+                                            <img class="icon-view" id="icon-view" src="./assets/images/icon-view.svg"
+                                                alt="Icon View">
+                                        </div>
+                                        <div class="termins">
+                                            <input type="checkbox" id="termins">
+
+                                            <label for="termins" class="text-hermaione pointer">
+                                                <span class="checkmark"></span>
+                                                <span class="text">Aceptar términos y condiciones</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" id="create-account" class="btn-positive bg-harry">
+                                            Crear cuenta
+                                        </button>
+                                    </form>
+                                    <a href="#" class="text-hermaione text-center font-bold mt-3">O registrarse con otra
+                                        cuenta</a>
+                                    <!-- Registrarse con otras cuentas -->
+                                    <div class="socials">
+                                        <a href="#" class="icon">
+                                            <img src="./assets/images/Icon apple.png" alt="">
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <img src="./assets/images/Icon facenook.png" alt="">
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <img src="./assets/images/Icon google.png" alt="">
+                                        </a>
+                                    </div>
+                                    <p class="text-harry text-center last-a font-bold pointer" id="targetLogin">¿Ya eres
+                                        usuario? <span class="text-hermaione">Ingresar</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sección de inicio de sesión - Desktop-->
+                        <div class="card-login desktop">
+                            <div class="desktop">
+                                <h2 class="text-hermaione welcome">Bienvenido</h2>
+                                <p class="text-hermaione">Inicie sesión ingresando su cuenta aquí</p>
+                            </div>
+                            <!-- Formulario -->
+                            <form class="form-login-desktop desktop">
+                                <div class="input">
+                                    <p class="text-harry font-bold">Email / Nombre de usuario</p>
+                                    <input name="user" autocomplete="off" required type="text"
+                                        placeholder="Ingresa email o nombre de usuario">
+                                </div>
+                                <div class="input">
+                                    <p class="text-harry font-bold">Contraseña</p>
+                                    <input name="password" autocomplete="off" required type="password"
+                                        placeholder="Ingresa contraseña" id="password">
+                                    <img class="icon-view" id="icon-view" src="./assets/images/icon-view.svg"
+                                        alt="Icon View">
+                                </div>
+                                <a href="#" class="text-harry text-right font-bold mt-1">¿Olvidaste tu contraseña?</a>
+                                <button type="submit" id="btn-submit-login" class="btn-positive bg-harry mt-3">
+                                    Iniciar Sesión
+                                </button>
+                            </form>
+                            <!-- Registrarse con otras cuentas -->
+                            <div class="desktop">
+                                <a href="#" class="text-hermaione text-center font-bold mt-3">O inicie sesión con otra
+                                    cuenta</a>
+                                <div class="socials">
+                                    <a href="#" class="icon">
+                                        <img src="./assets/images/Icon apple.png" alt="">
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <img src="./assets/images/Icon facenook.png" alt="">
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <img src="./assets/images/Icon google.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="new-user-desktop text-harry text-center last-a font-bold pointer mt-4"
+                                id="targetRegister">¿Eres nuevo
+                                usuario? <span class="text-hermaione">Crear una cuenta</span></p>
+                            <div class="bottom-line"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
